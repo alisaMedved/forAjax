@@ -8,8 +8,8 @@ clickMeButton.addEventListener("click", () => {
 });
 
 
-function onDataReceived(data) {
-    data.forEach(el => {
+function onDataReceived(mas) {
+    mas.forEach(el => {
         const img = document.createElement("img");
         img.src = el.thumbnail;
         document.querySelector("#result").appendChild(img);
