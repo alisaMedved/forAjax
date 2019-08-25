@@ -3,7 +3,8 @@ const pageNumberEl = document.querySelector("#page-number");
 const clickMeButton = document.querySelector("#click-me");
 
 clickMeButton.addEventListener("click", () => {
-    getImages(pageNumberEl.value, onDataReceived);
+   const promise = getImages(pageNumberEl.value);
+   promise.then(onDataReceived);
 });
 
 
@@ -15,4 +16,5 @@ function onDataReceived(data) {
     })
 }
 
- // onDataReceived - колбек
+
+
