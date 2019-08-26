@@ -28,10 +28,14 @@ const createTask = (title) => {
 };
 
 const updateTask = (title, id) => {
-    const promise = axios.put("https://repetitora.net/api/JS/Tasks", {
-        title,
-        widgetId: 8907745,
-        taskId: id
+    const promise = axios({
+        method: "put",
+        url: "https://repetitora.net/api/JS/Tasks",
+        data: {
+            title,
+            widgetId: 8907745,
+            taskId: id
+        }
     });
     return promise
         .then((response) => {
