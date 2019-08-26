@@ -5,19 +5,37 @@
 </head>
 <body>
 
-<button id="click-me">ClickMe</button>
+<div>
+<button id="click-me">Get Images</button>
 <label for="page-number">номер страницы:</label>
 <input type="number" value="" id="page-number">
 <div id="result"></div>
+</div>
 
-<!-- подключаем библиотеку jQuery -->
 
-<!--<script-->
-<!--        src="https://code.jquery.com/jquery-2.2.4.js"-->
-<!--        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="-->
-<!--        crossorigin="anonymous"></script>-->
+<button id="get-tasks">Get tasks</button>
 
-<!--Подключаем библиотеку axios -->
+<div>
+<label for="title-tasks">New task:</label>
+<input type="text" value="" id="title-tasks">
+<button id="create-task">Create task</button>
+</div>
+
+<div>
+    <label for="ID-task">Delete task ID:</label>
+    <input type="text" value="" id="ID-task">
+    <button id="delete-task">Delete task</button>
+</div>
+
+<div>
+    <label for="ID-taskUpdate">Update task ID:</label>
+    <input type="text" id="ID-taskUpdate">
+    <label for="title-tasksUpdate">New title updated task:</label>
+    <input type="text" id="title-tasksUpdate">
+    <button id="update-task">Update task</button>
+</div>
+
+<ul id="result-tasks"></ul>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
